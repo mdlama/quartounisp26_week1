@@ -1,5 +1,5 @@
 ---
-title: "Interactive R, Python, and Shiny in the Browser"
+title: "Introduction to the Quarto Universe"
 format:
   live-revealjs:
     theme: [default, custom.scss]
@@ -337,6 +337,14 @@ Quarto extension gallery by Mickaël Canouil
 
 ::: aside
 [Link](https://m.canouil.dev/quarto-extensions/)
+:::
+
+## Quarto examples
+
+![](images/quarto-gallery.png){width=80% fig-align="center"}
+
+::: aside
+[Link](https://quarto.org/docs/gallery/)
 :::
 
 ## {background-image="images/quartolive-intro.png"}

@@ -1,0 +1,401 @@
+[
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Introduction",
+    "text": "Introduction\n\n\n ivelasq\n ivelasq3\n ivelasq3\n ivelasq.rbind.io"
+  },
+  {
+    "objectID": "index.html#picture-this",
+    "href": "index.html#picture-this",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Picture this:",
+    "text": "Picture this:\nFirst day of class…\n\nFirst day of class, your student goes, “Professor, I tried installing R but my laptop keeps running out of space.”"
+  },
+  {
+    "objectID": "index.html#picture-this-1",
+    "href": "index.html#picture-this-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Picture this:",
+    "text": "Picture this:\nFirst day of class…\n\n\n“Professor, I tried installing R but my laptop keeps running out of space.”"
+  },
+  {
+    "objectID": "index.html#picture-this-2",
+    "href": "index.html#picture-this-2",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Picture this:",
+    "text": "Picture this:\nTo your boss…\n\n\n\n\n“I created this great dashboard, but IT is taking forever to approve the server request.”\n\n\nAt work, you tell your boss, “I created this great dashboard, but IT is taking forever to approve the server request.”"
+  },
+  {
+    "objectID": "index.html#picture-this-3",
+    "href": "index.html#picture-this-3",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Picture this:",
+    "text": "Picture this:\nWith your colleague…\n\n\n“Sorry, I don’t have R set up on my laptop.”\n\n\n\n\nOr, since you don’t have a server, you share your code with your colleague but they say, “Sorry, I don’t have R set up on my laptop.”"
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "Enter the world of interactive R and Python in the browser. Running code directly in the browser opens the door for many new and exciting uses for data science on the web."
+  },
+  {
+    "objectID": "index.html#section-1",
+    "href": "index.html#section-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "This is thanks to the amazing technology brought to you by webR and Pyodide. But first, let’s talk about WebAssembly."
+  },
+  {
+    "objectID": "index.html#what-is-webassembly",
+    "href": "index.html#what-is-webassembly",
+    "title": "Introduction to the Quarto Universe",
+    "section": "What is WebAssembly?",
+    "text": "What is WebAssembly?\nWebAssemby is a low-level, high-performance binary instruction format that allows code to run in web browsers.\n\nWebAssemby, or Wasm, is a low-level, high-performance binary instruction format that allows compiled languages like C and C++ to run in web browsers at near-native speeds. C and C++ code is compiled by something called Emscripten. Emscripten takes the C/C++ code as input, produces Wasm as a result. Once it’s in Wasm, you can run it in any browser that supports Wasm, which in modern browsers, is most of them."
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "Python has had a browser solution for a while. Pyodide compiles the Python interpreter CPython to WebAssembly using Emscripten, making it possible to run Python in the browser."
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "Now, R has a similar solution with webR! WebR is the WebAssembly version of R that has been compiled to run in the browser. It’s an open-source project primarily driven by Posit, and thanks to the amazing work of many folks but especially George Stagg and Lionel Henry, it is possible to run R code directly in a web browser without the need for traditional servers to execute the code. A user can visit a website and run R code directly without R installed on their device. All that is required is a web server such as GitHub Pages or Netlify."
+  },
+  {
+    "objectID": "index.html#example-interactive-r-console",
+    "href": "index.html#example-interactive-r-console",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Interactive R console",
+    "text": "Example: Interactive R console\n\n\n\n\n\n\n\nFor example, this is a web-based interactive R console that is included in the webR source repo as a demonstration of integrating webR in a wider web application. It provides a simple R environment in your web browser and includes console input/output, code editing, file management, and graphics device output.\n\n\nhttps://webr.r-wasm.org/latest/"
+  },
+  {
+    "objectID": "index.html#packages-with-webr",
+    "href": "index.html#packages-with-webr",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Packages with webR",
+    "text": "Packages with webR\n\n\n\nrepo.r-wasm.org\n\n\nR Universe\n\n\nPyodide include a package manager that allows the use of over 1500 Python packages. It can also install Python wheels or load custom Python packages. There are over 14k R packages available for webR (not all have been tested). The way it works is that the R packages must be compiled for Wasm. By default, webr::install() will use the public repository hosted at https://repo.r-wasm.org/. R Universe is a project by rOpenSci that experiments with ideas for improving the publication and discover of research software in R. It builds Wasm binaries for R packages for use in webR applications. So for your custom R packages, the easiest wy to get up and running is to create a personal R-Universe repo for your packages. The system will automatically build R package binaries for different targets including WebAssembly, which can be used in webR or QuartoLive. There are other options, such as the rwasm package."
+  },
+  {
+    "objectID": "index.html#how-to-use-webr",
+    "href": "index.html#how-to-use-webr",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use webR",
+    "text": "How to use webR\n\n\n\n\n\n\n\nhttps://docs.r-wasm.org/webr/latest/"
+  },
+  {
+    "objectID": "index.html#how-to-use-webr-1",
+    "href": "index.html#how-to-use-webr-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use webR",
+    "text": "How to use webR\nInstall the package:\nnpm i webr\nImport the WebR class:\nimport { WebR } from 'webr';\n\nconst webR = new WebR();\nawait webR.init();\n\nWhat if you don’t know JavaScript? 😅\n\nWebR aims to be as quick and easy to use as possible for those familiar with JavaScript web development, which raises the question… what if you don’t know Javascript?"
+  },
+  {
+    "objectID": "index.html#introduction-to-quarto",
+    "href": "index.html#introduction-to-quarto",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Introduction to Quarto",
+    "text": "Introduction to Quarto\n\nThe next evolution of R Markdown\nA publishing system for R, Python, and more\nCreates notebooks, dashboards, books, reports, presentations\n\n\n\nQuarto is a next-generation, open-source publishing system. It has expanded upon R Markdown to add new languages and can add more in the future. R Markdown has a lot of packages doing lots of different things, but Quarto has a shared expression for core features. Create dynamic content with Python, R, Julia, and Observable. Enable “single-source publishing” — create Word, PDFs, HTML, etc. from one source, you can make books, websites, presentations. There are many resources about Quarto, I gave a talk at R-Ladies St. Louis, and happy to link, but will only be sharing most critical aspects.\n\n\nquarto.org/"
+  },
+  {
+    "objectID": "index.html#anatomy-of-a-quarto-document",
+    "href": "index.html#anatomy-of-a-quarto-document",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Anatomy of a Quarto document",
+    "text": "Anatomy of a Quarto document\n\n---\ntitle: \"ggplot2 demo\"\nformat: \n  html:\n    code-fold: true\n---\n\n## Meet Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see &lt;https://quarto.org&gt;.\n\n```{r}\n#| label: plot-penguins\n#| echo: false\n#| message: false\n#| warning: false\n\nlibrary(tidyverse)\nlibrary(palmerpenguins)\n\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", y = \"Bill length (mm)\",\n    color = \"Penguin species\", shape = \"Penguin species\"\n  ) +\n  theme_minimal()\n```"
+  },
+  {
+    "objectID": "index.html#quarto-extensions",
+    "href": "index.html#quarto-extensions",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\n\nFormatsJournal articlesRevealJS themes\n\n\n\n\n\n\n\nScrollytelling extension\n\n\n\n\n\n\n\nJournal of Statistical Software (JSS)\n\n\n\n\n\n\n\nnes-revealjs format by EmilHvitfeldt\n\n\n\n\nQuarto extensions let you customize and extend Quarto’s functionality beyond its built-in features. They enable: New Output Formats – Create custom templates for reports, presentations, or interactive documents, Custom Layouts & Themes – Design unique styling and layouts for HTML, PDF, or Word outputs. Custom Shortcodes & Filters – Modify how Quarto processes content, such as adding new syntax or automating formatting, which I will show in next page. Quarto has a Lua-based extension system, and you can make your own, too."
+  },
+  {
+    "objectID": "index.html#quarto-extensions-1",
+    "href": "index.html#quarto-extensions-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nFor example, there’s a fontawesome extension.\nInstall the extension:\n\n\nTerminal\n\nquarto add quarto-ext/fontawesome\n\nAdd to your Quarto document YAML heading:\n\n\nexample.qmd\n\n---\ntitle: \"ggplot2 demo\"\nformat: \n  html:\n    code-fold: true\n    filters:\n      - fontawesome\n---"
+  },
+  {
+    "objectID": "index.html#quarto-extensions-2",
+    "href": "index.html#quarto-extensions-2",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nUse the extension in the doc:\n{{&lt; fa brands github &gt;}}\nResults in:"
+  },
+  {
+    "objectID": "index.html#quarto-extensions-3",
+    "href": "index.html#quarto-extensions-3",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Quarto extensions",
+    "text": "Quarto extensions\nQuarto extension gallery by Mickaël Canouil\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#quarto-examples",
+    "href": "index.html#quarto-examples",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Quarto examples",
+    "text": "Quarto examples\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#section-5",
+    "href": "index.html#section-5",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "Quarto Live allows you to embed WebAssembly-powered code blocks and exercises in Quarto documents through the quarto-live extension. There’s support for both R via webR and Python via Pyodide. Featuers include interactive code blocks, exercises with hints and solutions, and rich output like plots. And most importantly, web development skills are not needed to use webR in your content. I wanted to mention that originally, there was Jame Balamuta’s quarto-webr extension, but quarto-live is the version supported by Posit."
+  },
+  {
+    "objectID": "index.html#introduction-to-quarto-live",
+    "href": "index.html#introduction-to-quarto-live",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Introduction to Quarto Live",
+    "text": "Introduction to Quarto Live\nQuarto Live embeds WebAssembly powered code blocks and exercises for R and Python into Quarto documents with HTML-based output formats.\n\n\n\n\n\n\n\n\n\nAfter a short loading period, a Run code button will appear. R and Python code can be edited and executed in an editor like this one. Let’s run and edit this code as an example."
+  },
+  {
+    "objectID": "index.html#how-to-install-quarto-live",
+    "href": "index.html#how-to-install-quarto-live",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to install Quarto Live",
+    "text": "How to install Quarto Live\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\nAdd to your Quarto document YAML header:\n\n\nexample.qmd\n\n---\nformat: live-html\n---"
+  },
+  {
+    "objectID": "index.html#how-to-install-quarto-live-1",
+    "href": "index.html#how-to-install-quarto-live-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to install Quarto Live",
+    "text": "How to install Quarto Live\nInstall the extension:\n\n\nTerminal\n\nquarto add r-wasm/quarto-live\n\nAdd to your Quarto document YAML header:\n\n\nexample.qmd\n\n---\nformat: live-html\nengine: knitr\n---\n\n{{&lt; include ./_extensions/r-wasm/live/_knitr.qmd &gt;}}"
+  },
+  {
+    "objectID": "index.html#how-to-use-quarto-live",
+    "href": "index.html#how-to-use-quarto-live",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\n\nPlace code in a webr code chunk for R\nPlace code in a pyodide code chunk for Python\n\n\n\nexample.qmd\n\n```{webr}\nfor (x in 1:5) {\n  print(x ** 2)\n}\n```"
+  },
+  {
+    "objectID": "index.html#how-to-use-quarto-live-1",
+    "href": "index.html#how-to-use-quarto-live-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\nCan be used in presentations too:\n\nEdit your YAML header to live-revealjs:\n\n\n\nexample.qmd\n\n---\nformat: live-revealjs\n---\n\n\nUse the quarto-drop extension to drop an R or Python console into your slides"
+  },
+  {
+    "objectID": "index.html#how-to-use-quarto-live-2",
+    "href": "index.html#how-to-use-quarto-live-2",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Quarto Live",
+    "text": "How to use Quarto Live\nOptions include:\n\nCreating read-only cells\nAutorun\nAutocomplete\nand more!"
+  },
+  {
+    "objectID": "index.html#installing-packages",
+    "href": "index.html#installing-packages",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Installing packages",
+    "text": "Installing packages\nAs the document loads\n\n\nexample.qmd\n\n---\nformat: live-html\nwebr:\n  packages:\n    - dplyr\n    - palmerpenguins\n    - ggplot2\n---"
+  },
+  {
+    "objectID": "index.html#installing-packages-1",
+    "href": "index.html#installing-packages-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Installing packages",
+    "text": "Installing packages\nInteractively\n\n\nexample.qmd\n\n```{webr}\ninstall.packages(\"dplyr\", quiet = TRUE)\n```"
+  },
+  {
+    "objectID": "index.html#displaying-plots",
+    "href": "index.html#displaying-plots",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Displaying plots",
+    "text": "Displaying plots\n\n\n\n\n\n\n\n\n\nAs mentioned earlier, you can also do plots with webR. Graphics work a bit different than normal. It has something called a graphics device that implements primitive drawing commands from R in the browser. It takes advantage of features in a browers when plotting R, things like fonts from other languages or emojis."
+  },
+  {
+    "objectID": "index.html#creating-exercises",
+    "href": "index.html#creating-exercises",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Creating exercises",
+    "text": "Creating exercises\nDesignating a webr chunk as an exercise (with optional setup code, hints, solutions, and grading).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\nConsider subtracting 1, 2, and 3 from 10.\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe answer is 4 ☺️"
+  },
+  {
+    "objectID": "index.html#example-claus-wilke-introduction-to-r",
+    "href": "index.html#example-claus-wilke-introduction-to-r",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Claus Wilke Introduction to R",
+    "text": "Example: Claus Wilke Introduction to R\n\n\n\n\n\n\n\nhttps://wilkelab.org/SDS366/worksheets/intro-to-R.html"
+  },
+  {
+    "objectID": "index.html#example-six-not-so-basic-base-r-functions",
+    "href": "index.html#example-six-not-so-basic-base-r-functions",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Six not-so-basic base R functions",
+    "text": "Example: Six not-so-basic base R functions\n\n\n\n\n\n\n\nhttps://ivelasq.rbind.io/blog/not-so-basic-base-r-functions/"
+  },
+  {
+    "objectID": "index.html#webr-love",
+    "href": "index.html#webr-love",
+    "title": "Introduction to the Quarto Universe",
+    "section": "webR love 💜",
+    "text": "webR love 💜"
+  },
+  {
+    "objectID": "index.html#introduction-to-shiny",
+    "href": "index.html#introduction-to-shiny",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Introduction to Shiny",
+    "text": "Introduction to Shiny\nShiny allows you to create web apps, no web development skills required.\n\n\n\n\n\n\n\nshiny.posit.co"
+  },
+  {
+    "objectID": "index.html#traditional-shiny-architecture",
+    "href": "index.html#traditional-shiny-architecture",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Traditional Shiny architecture",
+    "text": "Traditional Shiny architecture\n\n\n\n\n\n\n\nThe traditional way of deploying Shiny involves in a separate server and client. A server is a machine, connected to the Internet, that runs 24/7, ready to run your Shiny app. The server runs Python and Shiny, and clients connect via the web browser. Each client keeps an open websocket connection as long as they are using the application. This is of course a simplification of the process, but fundamentally, it looks like this.\n\n\nSource"
+  },
+  {
+    "objectID": "index.html#hosting-shiny-apps",
+    "href": "index.html#hosting-shiny-apps",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Hosting Shiny apps",
+    "text": "Hosting Shiny apps\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (enterprise)\nRoll your own\n\n\nCloud\n\nshinyapps.io\nPosit Connect Cloud\nHugging Face\nRoll your own\n\n\n\nThere are options for hosting Shiny apps, i.e., hosting their syervers, you could have RStudio Server on your laptop. But say you need scalability or additional security for your app, you could pay Posit money to have them host your servers for you with Posit Connect. There are also cloud-based solutions like shinyapps.io and Posit Connect. There’s a spectrum in terms of number of users, for some, it might just be a few people and for others, we’re talking thousands. There are also some in between, such as academics. Professors might have a few hundred folks looking at their apps, but they don’t have infrastructure or the resources to set it up."
+  },
+  {
+    "objectID": "index.html#hosting-shiny-apps-1",
+    "href": "index.html#hosting-shiny-apps-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Hosting Shiny apps",
+    "text": "Hosting Shiny apps\nSome web services offer scalability, features, and cost:\n\nGitHub Pages\nNetlify\nQuarto Pub\n\n\nBut they can’t run traditional Shiny apps!\n\nThis is static web hosting. And it’s great in terms of reach and affordabilty. You don’t have to think about servers anymore, you just give them your app files. But, there’s no way to run Shiny apps or dynamic R or Python code. If you’ve worked with Shiny in the past, you’ve probably embedded Shiny apps in an iFrame when you wanted to share them on a website."
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "Introduction to the Quarto Universe",
+    "section": "",
+    "text": "With Shinylive, anybody can create their own serverless Shiny apps to run in the browser."
+  },
+  {
+    "objectID": "index.html#introduction-to-shinylive",
+    "href": "index.html#introduction-to-shinylive",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Introduction to Shinylive",
+    "text": "Introduction to Shinylive\n#| '!! shinylive warning !!': |\n#|   shinylive does not work in self-contained HTML documents.\n#|   Please set `embed-resources: false` in your metadata.\n#| standalone: true\n#| viewerHeight: 500\n\nlibrary(shiny)\nlibrary(bslib)\n\nui &lt;- page_sidebar(\n  title = \"Simple Shiny App\",\n  theme = bs_theme(bootswatch = \"flatly\"),\n  \n  sidebar = sidebar(\n    numericInput(\"number\", \"Enter a number:\", value = 5, min = 1, max = 100),\n    selectInput(\"color\", \"Choose color:\", \n                choices = c(\"red\", \"blue\", \"green\", \"purple\"))\n  ),\n  \n  card(\n    card_header(\"Result\"),\n    card_body(\n      plotOutput(\"plot\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  output$plot &lt;- renderPlot({\n    plot(1:input$number, \n         col = input$color,\n         pch = 19,\n         cex = 2,\n         main = \"Simple Plot\",\n         xlab = \"Index\",\n         ylab = \"Value\")\n  })\n}\n\nshinyApp(ui, server)\n\nAnnounced in July 2022 for Python and September 2023 for R, Shinylive uses Pyodide and webR to enable fully in-browser Shiny apps without a backend. It offers an online editor, conversion of existing Shiny apps, and embedding Shiny apps in Quarto documents."
+  },
+  {
+    "objectID": "index.html#shinylive-architecture",
+    "href": "index.html#shinylive-architecture",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Shinylive architecture",
+    "text": "Shinylive architecture\n\n\n\n\n\n\n\nAll you need to run Shinylive is one of these static web servers. When an application is deployed with Shinylive, Python and Shiny run in the web browser: the browser is effectively both the client and server for the application. There is a web server that serves files, but it does not run Python or Shiny—it can be a “dumb” static web server.\n\n\nSource"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive",
+    "href": "index.html#how-to-use-shinylive",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\n\nShinylive online editor\nConvert a Shiny app\nEmbed a Shiny app with Quarto"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-1",
+    "href": "index.html#how-to-use-shinylive-1",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nShinylive online editor\n\n\n\n\n\n\n\nThere’s an online Shinylive editor for R and Python. The editor is on the left, so you can change the app in real time. Build it live! It uses bslib which is next-generation Shiny creation and styling. It aims to look beautiful right out of the box. You can share apps via the share button, with a URL that you can sent to someone else.\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-2",
+    "href": "index.html#how-to-use-shinylive-2",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nInstall the package:\ninstall.packages(\"shinylive\")\n\npip install shinylive\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-3",
+    "href": "index.html#how-to-use-shinylive-3",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nExport the app:\nshinylive::export(\"myapp\", \"site\")\n\nshinylive export myapp site\n\n\nConverting the app takes an app in the my app directory and produces an output directory site and then you can load the files to a static web hosting service.\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-4",
+    "href": "index.html#how-to-use-shinylive-4",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nConvert a Shiny app\nStart a web server for the directory:\nhttpuv::runStaticServer(\"site\")\n\ncd site\npython -m http.server 8000\n\n\nIf you want to preview the app, you can run this and it’ll open it up in a web browser.\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-5",
+    "href": "index.html#how-to-use-shinylive-5",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInstall the Quarto extension:\n\n\nTerminal\n\nquarto add quarto-ext/shinylive\n\nAdd to your Quarto document YAML heading:\n\n\nexample.qmd\n\nfilters:\n  - shinylive\n\n\n\nR docs\nPython docs"
+  },
+  {
+    "objectID": "index.html#how-to-use-shinylive-6",
+    "href": "index.html#how-to-use-shinylive-6",
+    "title": "Introduction to the Quarto Universe",
+    "section": "How to use Shinylive",
+    "text": "How to use Shinylive\nEmbed a Shiny app with Quarto\nInsert a code block with {shinylive-python} or {shinylive-r}\n\n\nexample.qmd\n\n```{shinylive-python}\n#| standalone: true\n\n/* App code here */\n\n```"
+  },
+  {
+    "objectID": "index.html#example-shiny-for-python-docs",
+    "href": "index.html#example-shiny-for-python-docs",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Shiny for Python docs",
+    "text": "Example: Shiny for Python docs\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#example-claus-wilkes-color-picker-app",
+    "href": "index.html#example-claus-wilkes-color-picker-app",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Claus Wilke’s Color Picker App",
+    "text": "Example: Claus Wilke’s Color Picker App\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#example-shiny-assistant",
+    "href": "index.html#example-shiny-assistant",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Example: Shiny Assistant",
+    "text": "Example: Shiny Assistant\n\n\n\n\n\n\n\nLink"
+  },
+  {
+    "objectID": "index.html#use-cases",
+    "href": "index.html#use-cases",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Use cases",
+    "text": "Use cases\n\nShare interactive reports and dashboards with executable code\nCreate and distribute interactive, reproducible documentation\nR-based submissions of clinical trial data to regulatory bodies for review\nTeaching and learning\n\n\nwebR can provide a smooth, interactive, immediate introduction to the world of working with data in R. Users who haven’t had the chance to use R due to barriers raised by software installation or cloud-based service registration can still be introduced to R thanks to interactive examples powered by webR. And in terms of reproducibility, you can have reproducible statistics through containerization and notebook-style literate programming. The R Consortium Submissions Group champions improved practices of R in clinical trial research, and thanks to Shinylive, they have successfully submitted a pilot R Shiny app featuing Shinylive to the FDA to review. In terms of educational benefits, say you’re giving an intro to R workshop, you can dive into code without software. You can remix examples on the fly. You can have tactile educational content with interactive experimentation, reduced context switching, no more switching between console and tutorial, making the learning process more streamlined and engaging. This is also helpful for academics who want to service apps to hundreds of people but do not have the computational load available to them."
+  },
+  {
+    "objectID": "index.html#benefits-of-web-based-r-and-python",
+    "href": "index.html#benefits-of-web-based-r-and-python",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Benefits of web-based R and Python",
+    "text": "Benefits of web-based R and Python\n\nShare interactive reports and dashboards easily\nNo installation required for the user\nWorks on any device (tablets, Chromebooks)\n\nthinkR’s Rlinguo\n\n\n\nwebR shines in accessibility. Your content can be hosted on any static web hosting service and you can share with just a URL. Users can run code without installing software. It can be run on tablets or mobile. In terms of ease of deployment, you don’t need a supporting computational R server. You can host your code or app on static web hosting services like GitHub Pages."
+  },
+  {
+    "objectID": "index.html#limitations-and-considerations",
+    "href": "index.html#limitations-and-considerations",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Limitations and considerations",
+    "text": "Limitations and considerations\n\nUnder active development and things might change\nSome packages are not yet supported in WebAssembly\n\nSome packages may depend on network access and may not work\n\nSecurity considerations (everything runs client-side)\nPerformance limitations for large datasets and packages or intensive tasks\n\n\nNo secrets with a Shinylive app. ALl the source code goes to client, all the data goes to the client, don’t include credentials, don’t include sensitive data."
+  },
+  {
+    "objectID": "index.html#best-practices",
+    "href": "index.html#best-practices",
+    "title": "Introduction to the Quarto Universe",
+    "section": "Best practices",
+    "text": "Best practices\n\nKeep computations lightweight\nStructure code efficiently\nManage dependencies\nChoose the right tool for the job"
+  },
+  {
+    "objectID": "index.html#exploring-a-new-frontier",
+    "href": "index.html#exploring-a-new-frontier",
+    "title": "Introduction to the Quarto Universe",
+    "section": "“Exploring a new frontier”",
+    "text": "“Exploring a new frontier”"
+  }
+]
